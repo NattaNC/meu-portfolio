@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&display=swap');
+
+:root {
+    /* Cores */
+    --cor-01: #F7ECE1;
+    --cor-02: #00A5CF;
+    --cor-03: #1D1E2C;
+
+    --font-padrao: 'Ubuntu', sans-serif;
+    --font-secundaria: 'Alkalami', serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: var(--font-padrao);
+}
+
+body {
+    display: flex;
+    width: 100%;
+}
+
+/* Pagina do lado */
+aside {
+    width: 30%;
+}
+
+.img-perfil {
+    width: 100%;
+}
+
+.icon-contato {
+    height: 100px;
+}
+
+.meu-nome {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo-brazil {
+    height: 50px;
+}
+
+/* Principal */
+main {
+    width: 70%;
+}
