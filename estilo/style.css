@@ -24,32 +24,109 @@
 body {
     display: flex;
     width: 100%;
+    background-color: var(--cor-01);
 }
 
 /* Pagina do lado */
 aside {
-    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    background-color: rgb(41, 41, 41);
+    color: var(--cor-01);
+    padding-top: 3rem;
+    overflow-y: scroll;
+    transition: 1s;
+}
+
+.container {
+    width: 66%;
+    margin: auto;
+    padding-bottom: 3rem;
+}
+
+/* Foto perfil */
+.div-img-perfil {
+    display: flex;
+    justify-content: center;
 }
 
 .img-perfil {
     width: 100%;
+    border-radius: 50%;
+    border: 0.5rem solid var(--cor-01);
+    transition: 0.5s;
 }
 
-.icon-contato {
-    height: 100px;
+.img-perfil:hover {
+    border: 0.5rem solid var(--cor-02);
 }
 
-.meu-nome {
+/* Nome */
+.div-meu-nome {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+aside > .container span {
+    color: #00A5CF;
 }
 
 .logo-brazil {
-    height: 50px;
+    height: 25px;
 }
+
+/*Soft Skills*/
+.soft-skills {
+    margin-top: 4rem;
+}
+
+aside > .container > .soft-skills  ul {
+    list-style-position: inside;
+    margin-top: 1rem;
+    line-height: 1.2rem;
+}
+
+/* Contato */
+.contato {
+    margin-top: 4rem;
+}
+
+.contato h2 {
+    margin-bottom: 1rem;
+}
+
+.icon-contato {
+    margin-right: 1rem;
+    width: 2vw;
+}
+
+aside > .container > .contato ul > li {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin-top: 0.5rem;
+    font-size: 1vw;
+}
+
+aside > .container > .contato a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--cor-01);
+}
+
 
 /* Principal */
 main {
     width: 70%;
+    background-color: var(--cor-01);
+    padding: 3rem 2rem;
+    
 }
+
+
