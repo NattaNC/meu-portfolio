@@ -33,19 +33,22 @@ aside {
     flex-direction: column;
     align-items: center;
     width: 400px;
+    height: 100vh;
     background-color: rgb(41, 41, 41);
     color: var(--cor-01);
     padding-top: 3rem;
     overflow-y: scroll;
+    position: fixed;
     /*transition: 1s;*/
 }
 
-.container {
+
+section {
     width: 66%;
     margin: auto;
     padding-bottom: 3rem;
-}
 
+}
 /* Foto perfil */
 .div-img-perfil {
     display: flex;
@@ -72,7 +75,7 @@ aside {
     margin-top: 2rem;
 }
 
-aside > .container span {
+aside > section span {
     color: #00A5CF;
 }
 
@@ -85,7 +88,7 @@ aside > .container span {
     margin-top: 4rem;
 }
 
-aside > .container > .soft-skills  ul {
+aside > section > .soft-skills  ul {
     list-style-position: inside;
     margin-top: 1rem;
     line-height: 1.2rem;
@@ -105,7 +108,7 @@ aside > .container > .soft-skills  ul {
     width: 2vw;
 }
 
-aside > .container > .contato ul > li {
+aside > section > .contato ul > li {
     display: flex;
     align-items: center;
     list-style-type: none;
@@ -113,7 +116,7 @@ aside > .container > .contato ul > li {
     font-size: 1vw;
 }
 
-aside > .container > .contato a {
+aside > section > .contato a {
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -126,6 +129,7 @@ main {
     width: 70%;
     background-color: var(--cor-01);
     padding: 3rem 2rem;
+    margin-left: 400px;
 }
 
 /*Introdução */
@@ -171,4 +175,49 @@ main .btn > a {
 }
 
 /* Desenvolvimento */
+.tecnologias {
+    display: flex;
+    margin-left: -2rem;
+    margin-top: 3rem;
+}
+
+.card-tec {
+    background-color: var(--cor-01);
+    margin-left: 2rem;
+    width: 200px;
+    height: 200px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.151);
+}
+
+#logo-html, #logo-css, #logo-javascript, #logo-react {
+    height: 200px;
+    padding: 1rem;
+}
+
+
+#card-html {
+    border-bottom: 3px solid red;
+}
+
+#card-css {
+    border-bottom: 3px solid blue;
+}
+
+#card-javascript {
+    border-bottom: 3px solid yellow;
+}
+
+#card-react {
+    border-bottom: 3px solid var(--cor-02) ;
+}
+
+.span-card {
+    color: var(--cor-03);
+    margin-top: 2rem;
+    font-size: bold;
+}
+
+.logo {
+    height: 3rem;
+}
 
