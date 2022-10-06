@@ -2,7 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Alkalami&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap');
 
 :root {
     /* Cores */
@@ -11,14 +11,14 @@
     --cor-03: #1D1E2C;
 
     --font-padrao: 'Ubuntu', sans-serif;
-    --font-secundaria: 'Alkalami', serif;
+    --font-secundaria: 'Overpass', sans-serif;
 }
 
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: var(--font-padrao);
+    font-family: var(--font-secundaria);
 }
 
 body {
@@ -37,7 +37,7 @@ aside {
     color: var(--cor-01);
     padding-top: 3rem;
     overflow-y: scroll;
-    transition: 1s;
+    /*transition: 1s;*/
 }
 
 .container {
@@ -67,7 +67,7 @@ aside {
 .div-meu-nome {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     text-align: center;
     margin-top: 2rem;
 }
@@ -126,7 +126,49 @@ main {
     width: 70%;
     background-color: var(--cor-01);
     padding: 3rem 2rem;
-    
 }
 
+/*Introdução */
+main h1 {
+    font-family: var(--font-padrao);
+}
+
+main #h1-nome {
+    line-height: 5rem;
+    font-size: 4rem;
+}
+
+.introducao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+}
+
+main .btn {
+    background-color: var(--cor-03);
+    margin-top: 2rem;
+    padding: 0.9rem 3rem;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    color: var(--cor-01);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .btn > a {
+    color: var(--cor-01);
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.download {
+    position: relative;
+    left: 1rem;
+}
+
+/* Desenvolvimento */
 
