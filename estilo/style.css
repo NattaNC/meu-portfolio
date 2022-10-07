@@ -9,6 +9,7 @@
     --cor-01: #F7ECE1;
     --cor-02: #00A5CF;
     --cor-03: #1D1E2C;
+    --cor-04: #0A0908;
 
     --font-padrao: 'Ubuntu', sans-serif;
     --font-secundaria: 'Overpass', sans-serif;
@@ -24,6 +25,7 @@
 body {
     display: flex;
     width: 100%;
+    height: 100vh;
     background-color: var(--cor-01);
 }
 
@@ -33,8 +35,8 @@ aside {
     flex-direction: column;
     align-items: center;
     width: 400px;
-    height: 100vh;
-    background-color: rgb(41, 41, 41);
+    height: 100%;
+    background-color: var(--cor-04);
     color: var(--cor-01);
     padding-top: 3rem;
     overflow-y: scroll;
@@ -83,17 +85,6 @@ aside > section span {
     height: 25px;
 }
 
-/*Soft Skills*/
-.soft-skills {
-    margin-top: 4rem;
-}
-
-aside > section > .soft-skills  ul {
-    list-style-position: inside;
-    margin-top: 1rem;
-    line-height: 1.2rem;
-}
-
 /* Contato */
 .contato {
     margin-top: 4rem;
@@ -127,7 +118,7 @@ aside > section > .contato a {
 /* Principal */
 main {
     width: 70%;
-    background-color: var(--cor-01);
+    background-color: white;
     padding: 3rem 2rem;
     margin-left: 400px;
 }
@@ -147,7 +138,7 @@ main #h1-nome {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 500px;
+    height: 92vh;
 }
 
 main .btn {
@@ -169,6 +160,11 @@ main .btn > a {
     font-size: 1rem;
 }
 
+main .btn:hover {
+    background-color: black;
+    transition: 0.5s;
+}
+
 .download {
     position: relative;
     left: 1rem;
@@ -177,17 +173,24 @@ main .btn > a {
 /* Desenvolvimento */
 .tecnologias {
     display: flex;
-    margin-left: -2rem;
+    justify-content: space-between;
     margin-top: 3rem;
 }
 
 .card-tec {
-    background-color: var(--cor-01);
-    margin-left: 2rem;
+    background-color: white;
     width: 200px;
-    height: 200px;
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.151);
+    height: 180px;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.151);
 }
+
+.card-tec:hover {
+    animation:slide-top .5s cubic-bezier(.25,.46,.45,.94) both
+}
+
+@keyframes slide-top{0%{transform:translateY(0)}100%{transform:translateY(-25px)}}
 
 #logo-html, #logo-css, #logo-javascript, #logo-react {
     height: 200px;
@@ -212,7 +215,7 @@ main .btn > a {
 }
 
 .span-card {
-    color: var(--cor-03);
+    color: var(--cor-04);
     margin-top: 2rem;
     font-size: bold;
 }
@@ -220,4 +223,150 @@ main .btn > a {
 .logo {
     height: 3rem;
 }
+
+.conhecimentos {
+    margin-top: 5rem;
+}
+
+main h3 {
+    font-family: var(--font-secundaria);
+    color: rgba(0, 0, 0, 0.541);
+    text-transform: uppercase;
+}
+
+main h2 {
+    margin-top: 1rem;
+    text-transform: uppercase;
+}
+
+main p {
+    margin-top: 3rem;
+    color: var(--cor-03);
+    text-align: justify;
+    font-family: var(--font-padrao);
+    line-height: 1.3rem;
+}
+
+#p2 {
+    margin-top: 1rem;
+}
+
+
+/* Paisagem */
+
+#paisagem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/imagens/paisagem.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    margin-top: 5rem;
+    background-attachment: fixed;
+    width: 100%;
+    height: 230px;
+}
+
+main #paisagem > h1 {
+    color: white;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+/* Soft Skills */
+#h2-soft {
+    margin-top: 10rem;
+}
+
+.soft-skills {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+    width: 100%;
+}
+
+.card-soft-skills {
+    width: 250px;
+    height: 150px;
+    padding: 1rem;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.151);
+}
+
+#border-card1 {
+    border-bottom: 3px solid violet;
+}
+
+#border-card2 {
+    border-bottom: 3px solid lightblue;
+}
+
+#border-card3 {
+    border-bottom: 3px solid lightgreen;
+} 
+
+#border-card4 {
+    border-bottom: 3px solid rgb(255, 195, 82);
+}
+
+#border-card5 {
+    border-bottom: 3px solid rgb(255, 100, 100);
+}
+
+#border-card6 {
+    border-bottom: 3px solid rgb(146, 146, 146);
+}
+.div-img-soft {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 6rem;
+    height: 7rem;
+    position: relative;
+    bottom: 4rem;
+    clip-path: polygon(50% 0, 50% 0, 100% 30%, 100% 70%, 50% 100%, 50% 100%, 0% 70%, 0% 30%);
+}
+
+#empatia {
+    background: violet;
+}
+
+#positividade {
+    background-color: lightblue;
+}
+
+#flexivel {
+    background-color: lightgreen;
+}
+
+#proatividade {
+    background-color: rgb(255, 195, 82);
+}
+
+#estudo {
+    background-color: rgb(255, 100, 100);
+}
+
+#criticas {
+    background-color: rgb(146, 146, 146);
+}
+
+.img-soft-skill {
+    height: 50px;
+}
+
+.span-soft-skills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100px;
+    bottom: 80px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+
 
