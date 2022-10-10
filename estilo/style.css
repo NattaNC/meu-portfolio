@@ -84,6 +84,25 @@ aside > section span {
 .logo-brazil {
     height: 25px;
 }
+/* Navegação */
+menu nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+
+menu nav > a {
+    text-decoration: none;
+    color: var(--cor-01);
+    margin-top: 1rem;
+}
+
+menu nav > a:hover {
+    color: var(--cor-02);
+    transition: 1s;
+}
 
 /* Contato */
 .contato {
@@ -117,9 +136,9 @@ aside > section > .contato a {
 
 /* Principal */
 main {
-    width: 70%;
+    width: 100%;
     background-color: white;
-    padding: 3rem 2rem;
+    padding: 3rem;
     margin-left: 400px;
 }
 
@@ -179,7 +198,7 @@ main .btn:hover {
 
 .card-tec {
     background-color: white;
-    width: 200px;
+    width: 14vw;
     height: 180px;
     font-weight: bold;
     text-transform: uppercase;
@@ -240,11 +259,14 @@ main h2 {
 }
 
 main p {
-    margin-top: 3rem;
     color: var(--cor-03);
     text-align: justify;
     font-family: var(--font-padrao);
     line-height: 1.3rem;
+}
+
+.text-inicial {
+    margin-top: 3rem;
 }
 
 #p2 {
@@ -287,8 +309,8 @@ main #paisagem > h1 {
 }
 
 .card-soft-skills {
-    width: 250px;
-    height: 150px;
+    width: 18vw;
+    height: 160px;
     padding: 1rem;
     box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.151);
 }
@@ -376,11 +398,21 @@ main #paisagem > h1 {
     display: flex;
     justify-content: space-between;
     margin-top: 3rem;
+    width: 100%;
+}
+
+.skills-left {
+    width: 50%;
+    padding-right: 3rem;
+}
+
+.skills-right {
+    width: 50%;
 }
 
 .div-progress-bar {
     height: 6px;
-    width: 400px;
+    width: 100%;
     background-color: #CCC;
     position: relative;
     margin-bottom: 1.5rem;
@@ -498,8 +530,93 @@ main #paisagem > h1 {
 
 @keyframes progress-animation-api{
     0% { width: 0%; } 
-    100% { width: 52%}
+    100% { width: 40%}
 }
+
+/* Educação */
+.painel-educacao {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #c5dfdf;
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    border: 1px solid rgba(0, 0, 0, 0.178);
+}
+
+.painel-educacao:hover {
+    background-color: var(--cor-02);
+    transition: 1s;
+}
+
+.painel-educacao h4 {
+    text-transform: uppercase;
+    color: black;
+}
+
+.educacao {
+    margin-top: 5rem;
+}
+
+/* Meus Projetos */
+.meus-projetos {
+    margin-top: 5rem;
+}
+
+.projeto {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-projetos {
+    margin-top: 2rem;
+    width: 28vw;
+    height: 300px;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.171);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projeto a {
+    text-decoration: none;
+    font-family: var(--font-padrao);
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+}
+
+.projeto a > span {
+    background-color: rgba(0, 0, 0, 0.37);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+#ecommerce {
+    background-image: url(/imagens/img-ecommerce.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#blogr {
+    background-image: url(/imagens/img-blogr.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#snippet {
+    background-image: url(/imagens/img-snippet.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#huddle {
+    background-image: url(/imagens/img-huddle.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 
 
 

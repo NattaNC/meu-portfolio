@@ -1,10 +1,4 @@
 
-
-
-
-
-
-
 //Animação
 const animation = document.querySelector('#link1')
 const animation2 = document.querySelector('#link2')

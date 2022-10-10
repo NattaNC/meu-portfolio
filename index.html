@@ -29,18 +29,16 @@
                         <img class="logo-brazil" src="imagens/brazil.png" alt="">
                     </div>
                 </div>
-                <div>
-                    <div>
-                        <ul>
-                            <li>Home</li>
-                            <li>Sobre</li>
-                            <li>Soft-skills</li>
-                            <li>Habilidade</li>
-                            <li>Educação</li>
-                            <li>Projetos</li>
-                        </ul>
-                    </div>
-                </div>
+                <menu>
+                    <nav>       
+                        <a href="#">Home</a>
+                        <a href="#">Sobre</a>
+                        <a href="#">Soft-skills</a>
+                        <a href="#">Habilidade</a>
+                        <a href="#">Educação</a>
+                        <a href="#">Projetos</a>                        
+                    </nav>
+                </menu>
                 <div class="contato">
                     <h2>Contato</h2>
                     <ul>
@@ -77,12 +75,14 @@
             <h2>
                 Quem eu sou?
             </h2>
-            <p>
-                Oi, eu sou Nathan uma pessoa dedicada e esforçada que procura sempre ser melhor do que no dia anterior, estou iniciando na área de tecnologia se empenhando cada dia para me tornar um desenvolvedor Front end, tenho facilidade para aprender.
-            </p>
-            <p id="p2">
-                Atualmente procurando somar em um time engajado e com propósito.
-            </p>
+            <div class="text-inicial">
+                <p>
+                    Oi, eu sou Nathan uma pessoa dedicada e esforçada que procura sempre ser melhor do que no dia anterior, estou iniciando na área de tecnologia se empenhando cada dia para me tornar um desenvolvedor Front end, tenho facilidade para aprender.
+                </p>
+                <p id="p2">
+                    Atualmente procurando somar em um time engajado e com propósito.
+                </p>
+            </div>
         </div>
         <div>
             <div>
@@ -138,7 +138,7 @@
                             </div>
                             <div class="span-card">
                                 <span>
-                                    ReactJs - Uma biblioteca front-end.
+                                    React - Uma biblioteca front-end.
                                 </span>
                             </div>
                         </div>
@@ -227,7 +227,7 @@
                 </h2>
             </div>
             <div class="barra-progresso">
-                <div>
+                <div class="skills-left">
                     <div>
                         <h4>
                             HTML5
@@ -265,7 +265,7 @@
                         </div>
                     </div>
                 </div>
-                <div>
+                <div class="skills-right">
                     <div>
                         <h4>
                             ReactJs
@@ -298,22 +298,72 @@
                     <div class="div-progress-bar">
                         <div class="progress-bar" id="bar-api">
                             <span>
-                                52%
+                                40%
                             </span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div>
+        <div class="educacao">
+            <h3>
+                Educação
+            </h3>
             <h2>
                 Educação
             </h2>
+            <div class="minhas-educacoes">
+                <div class="div-educacao">
+                    <div class="painel-educacao">
+                        <h4>
+                            Curso em Video - HTML, CSS, JavaScript, Git e GitHub e Responsividade.
+                        </h4>
+                    </div>
+                </div>
+
+                <div class="div-educacao">
+                    <div class="painel-educacao">
+                        <h4>
+                            Hora de Codar - ReactJs e aprendendo React Native
+                        </h4>
+                    </div>
+                </div>
+                
+                <div class="div-educacao">
+                    <div class="painel-educacao">
+                        <h4>
+                            Ensino médio - Concluído
+                        </h4>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div>
-            <h2>
+        <div class="meus-projetos">
+            <h3>
                 Meus projetos
+            </h3>
+            <h2>
+                Projetos Recentes
             </h2>
+            <div class="div-projeto">
+                <div class="projeto">
+                    <a href="https://nattanc.github.io/ecommerce-product-page/" target="_blank" rel="external" class="card-projetos" id="ecommerce">
+                        <span>Sneakers</span>
+                    </a>
+                    <a href="https://nattanc.github.io/landing-page/landing-page-blogr/" target="_blank" rel="external" class="card-projetos" id="blogr">
+                        <span>Blogr</span>
+                    </a>
+                </div>
+
+                <div class="projeto">
+                    <a href="https://nattanc.github.io/landing-page/landing-page-snippet/" target="_blank" rel="external" class="card-projetos" id="snippet">
+                        <span>Snippet</span>
+                    </a>
+                    <a href="https://nattanc.github.io/landing-page/landing-page-hubble/" target="_blank" rel="external" class="card-projetos" id="huddle">
+                        <span>Huddle</span>
+                    </a>
+                </div>
+            </div>
         </div>
     </main>
     <script src="js/script.js"></script>
