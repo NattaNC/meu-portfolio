@@ -280,7 +280,7 @@ main p {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(/imagens/paisagem.jpg);
+    background-image: url(../imagens/paisagem.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center bottom;
@@ -593,26 +593,26 @@ main #paisagem > h1 {
 }
 
 #ecommerce {
-    background-image: url(/imagens/img-ecommerce.jpg);
+    background-image: url(../imagens/img-ecommerce.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 
 #blogr {
-    background-image: url(/imagens/img-blogr.jpg);
+    background-image: url(../imagens/img-blogr.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 #snippet {
-    background-image: url(/imagens/img-snippet.jpg);
+    background-image: url(../imagens/img-snippet.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 #huddle {
-    background-image: url(/imagens/img-huddle.jpg);
+    background-image: url(../imagens/img-huddle.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
