@@ -34,7 +34,7 @@ aside {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 400px;
+    width: 30%;
     height: 100%;
     background-color: var(--cor-04);
     color: var(--cor-01);
@@ -58,7 +58,7 @@ section {
 }
 
 .img-perfil {
-    width: 100%;
+    width: 70%;
     border-radius: 50%;
     border: 0.5rem solid var(--cor-01);
     transition: 0.5s;
@@ -79,6 +79,13 @@ section {
 
 aside > section span {
     color: #00A5CF;
+}
+
+.div-logo-brazil {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    width: 60%;
 }
 
 .logo-brazil {
@@ -115,7 +122,7 @@ menu nav > a:hover {
 
 .icon-contato {
     margin-right: 1rem;
-    width: 2vw;
+    width: 2.2vw;
 }
 
 aside > section > .contato ul > li {
@@ -139,7 +146,7 @@ main {
     width: 100%;
     background-color: white;
     padding: 3rem;
-    margin-left: 400px;
+    margin-left: 30%;
 }
 
 /*Introdução */
@@ -192,8 +199,14 @@ main .btn:hover {
 /* Desenvolvimento */
 .tecnologias {
     display: flex;
-    justify-content: space-between;
     margin-top: 3rem;
+    width: 100%;
+}
+
+.tec-left, .tec-right {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
 }
 
 .card-tec {
@@ -288,15 +301,20 @@ main p {
     background-attachment: fixed;
     width: 100%;
     height: 230px;
+    padding: 2rem;
 }
 
 main #paisagem > h1 {
     color: white;
-    font-size: 2.5rem;
+    font-size: 2.5vw;
     text-transform: uppercase;
 }
 
 /* Soft Skills */
+.conteudo-soft-skills {
+    display: block;
+}
+
 #h2-soft {
     margin-top: 5rem;
 }
@@ -561,6 +579,7 @@ main #paisagem > h1 {
 /* Meus Projetos */
 .meus-projetos {
     margin-top: 5rem;
+    margin-bottom: 5rem;
 }
 
 .projeto {
@@ -569,9 +588,9 @@ main #paisagem > h1 {
 }
 
 .card-projetos {
-    margin-top: 2rem;
-    width: 28vw;
-    height: 300px;
+    margin-top: 3rem;
+    width: 45%;
+    height: 280px;
     box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.171);
     display: flex;
     align-items: center;
@@ -615,6 +634,22 @@ main #paisagem > h1 {
     background-image: url(../imagens/img-huddle.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+#payment {
+    background-image: url(../imagens/img-car-payment.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: #03667c;
+}
+
+#qr-code {
+    background-image: url(../imagens/img-card-qr-code.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: #03667c;
 }
 
 

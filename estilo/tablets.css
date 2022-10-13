@@ -1,0 +1,30 @@
+@media only screen and (max-width: 1200px) {
+    
+    .tecnologias {
+        flex-direction: column;
+    }
+
+    .card-tec {
+        width: 25vw;
+    }
+
+    .tec-left, .tec-right {
+        width: 100%;
+        justify-content: space-around;
+    }
+    .tec-right {
+        margin-top: 3rem;
+    }
+
+    aside > section > .contato ul > li {
+        font-size: 1.3vw;
+    }
+
+    .conteudo-soft-skills {
+        display: none;
+    }
+
+    .div-logo-brazil {
+        width: 90%;
+    }
+}
