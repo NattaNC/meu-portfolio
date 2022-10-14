@@ -1,3 +1,25 @@
+// Aside
+const menu = document.querySelector('#menu-header')
+const cabeçalho = document.querySelector('#header')
+const PaginLado = document.querySelector('#aside')
+const principal = document.querySelector('#main')
+const close = document.querySelector('#fechar')
+
+menu.addEventListener('click', MenuMobile)
+function MenuMobile(){
+    PaginLado.style.display = 'flex'
+    cabeçalho.style.display = 'none'
+    principal.style.display = 'none'
+}
+
+close.addEventListener('click', fechado)
+function fechado(){
+    PaginLado.style.display = 'none'
+    cabeçalho.style.display = 'flex'
+    principal.style.display = 'block'
+}
+
+
 
 //Animação
 const animation = document.querySelector('#link1')

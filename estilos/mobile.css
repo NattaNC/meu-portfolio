@@ -1,0 +1,129 @@
+@media only screen and (max-width: 600px) {
+    menu {
+        display: none;
+    }
+
+    body {
+        display: block;
+    }
+
+    header {
+        display: flex;
+    }
+    
+    aside {
+        display: none;
+        width: 60%;
+    }
+
+    .img-perfil {
+        border: 0.1rem solid white;
+        margin-right: 1rem;
+    }
+
+    #img-perfil-mobile {
+        width: 50px;
+        height: 50px;
+    }
+
+    .material-symbols-outlined {
+        color: white;
+    }
+    
+    #menu-header {
+        font-size: 2rem;
+        margin-left: 0.9rem;
+    }
+
+    #fechar {
+        position: absolute;
+        display: block;
+        font-size: 2rem;
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        padding-right: 2rem;
+    }
+
+    #meu-nome-mobile {
+        margin-top: 2rem;
+    }
+
+    .div-meu-nome {
+        margin-top: 0;
+    }
+
+    .meu-nome {
+        margin-right: 2rem;
+    }
+
+    header .meu-nome > h1 {
+        color: white;
+        font-size: 1rem;
+    }
+    
+    header .meu-nome > span {
+        font-size: 0.7rem;
+        color: #00A5CF;
+    }
+
+    main {
+        margin-left: 0;
+        padding: 1rem;
+    }
+
+    .sobre-mim {
+        margin-top: 0;
+    }
+
+    .card-tec {
+        width: 15rem;
+    }
+
+    .card-soft-skills {
+        width: 43vw;
+    }
+
+    .meus-projetos, .educacao, .hard-skills, .minhas-soft-skills, .paisagem, .minhas-linguagens{
+        margin-top: 9rem;
+    }
+
+    .projeto {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #ecommerce, #blogr, #snippet, #huddle, #payment, #qr-code {
+        width: 80vw;
+    }
+
+    aside > section > .contato ul > li {
+        font-size: 3vw;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .card-tec {
+        width: 10rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    main #h1-nome {
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    main #h1-nome {
+        font-size: 2.7rem;
+    }
+
+    .span-card {
+        margin-top: 0.5rem;
+    }
+    
+    .card-tec {
+        width: 9rem;
+    }
+}
