@@ -7,13 +7,29 @@
         display: block;
     }
 
+
     header {
         display: flex;
     }
+
+    header .meu-nome > h1 {
+        color: white;
+        font-size: 1rem;
+    }
     
+    header .meu-nome > span {
+        font-size: 0.7rem;
+        color: #00A5CF;
+    }
+    
+    /* Aside menu */
     aside {
         display: none;
-        width: 60%;
+        width: 51%;
+    }
+
+    .icon-contato {
+        width: 5vw;
     }
 
     .img-perfil {
@@ -24,6 +40,7 @@
     #img-perfil-mobile {
         width: 50px;
         height: 50px;
+        display: block;
     }
 
     .material-symbols-outlined {
@@ -33,16 +50,6 @@
     #menu-header {
         font-size: 2rem;
         margin-left: 0.9rem;
-    }
-
-    #fechar {
-        position: absolute;
-        display: block;
-        font-size: 2rem;
-        width: 100%;
-        display: flex;
-        justify-content: end;
-        padding-right: 2rem;
     }
 
     #meu-nome-mobile {
@@ -55,21 +62,39 @@
 
     .meu-nome {
         margin-right: 2rem;
+        
     }
 
-    header .meu-nome > h1 {
-        color: white;
-        font-size: 1rem;
-    }
-    
-    header .meu-nome > span {
-        font-size: 0.7rem;
-        color: #00A5CF;
+    aside > section > .contato ul > li {
+        font-size: 2.2vw;
     }
 
+    section {
+        margin-top: 2rem;
+    }
+
+    #fechar {
+        display: flex;
+        width: 100%;
+        justify-content: end;
+        margin-right: 4rem;
+        font-size: 7vw;
+    }
+
+    /* Principal */
     main {
         margin-left: 0;
         padding: 1rem;
+        margin-top: 0px;
+    }
+
+
+    #paisagem {
+        padding: 0px;
+    }
+
+    main #paisagem > h1 {
+        font-size: 4vw;
     }
 
     .sobre-mim {
@@ -97,8 +122,9 @@
         width: 80vw;
     }
 
-    aside > section > .contato ul > li {
-        font-size: 3vw;
+    .projeto a {
+        width: 78vw;
+        font-size: 5vw;
     }
 }
 
@@ -111,6 +137,14 @@
 @media only screen and (max-width: 400px) {
     main #h1-nome {
         font-size: 3rem;
+    }
+
+    .meu-nome  h1 {
+        font-size: 1rem;
+    }
+
+    .meu-nome span {
+        font-size: 0.9rem;
     }
 }
 

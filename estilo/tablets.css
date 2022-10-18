@@ -45,6 +45,14 @@
     #paisagem {
         height: 150px;
     }
+
+    .logo-brazil {
+        height: 20px;
+    }
+
+    .meu-nome {
+        margin-right: 1rem;
+    }
 }
 
 @media only screen and (max-width: 700px) {

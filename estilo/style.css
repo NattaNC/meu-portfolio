@@ -28,6 +28,10 @@ body {
     height: 100vh;
     background-color: white;
 }
+/* Animação Scroll */
+#h1-nome {
+    visibility: hidden;
+}
 
 /* Cabeçalho */
 header {
@@ -40,10 +44,13 @@ header {
     background-color: var(--cor-04);
 }
 
+#img-perfil-mobile {
+    display: none;
+}
+
 .material-symbols-outlined {
     color: white;
 }
-
 
 /* Pagina do lado */
 aside {
@@ -59,8 +66,6 @@ aside {
     position: fixed;
     /*transition: 1s;*/
 }
-
-
 
 #fechar {
     display: none;
@@ -395,6 +400,7 @@ main #paisagem > h1 {
 
 #empatia {
     background: violet;
+    position: relative;
 }
 
 #positividade {
@@ -622,11 +628,16 @@ main #paisagem > h1 {
 }
 
 .projeto a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
     text-decoration: none;
     font-family: var(--font-padrao);
-    font-size: 2rem;
+    font-size: 2.5vw;
     font-weight: bold;
-    color: white;
+    color: var(--cor-01);
+    background-color: var(--cor-04);
 }
 
 .projeto a > span {
@@ -659,24 +670,6 @@ main #paisagem > h1 {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-#payment {
-    background-image: url(../imagens/img-car-payment.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    background-color: #03667c;
-}
-
-#qr-code {
-    background-image: url(../imagens/img-card-qr-code.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    background-color: #03667c;
-}
-
-
 
 
 
