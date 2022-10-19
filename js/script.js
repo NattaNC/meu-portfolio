@@ -1,7 +1,7 @@
 // Scroll Reveal
 window.sr = ScrollReveal({ reset: true });
 
-ScrollReveal().reveal(".slide-left, .sobre-mim, #aside" , {
+ScrollReveal().reveal(".slide-left, .sobre-mim" , {
     duration: 1500,
     origin: "left",
     distance: "300px",
@@ -86,15 +86,15 @@ const hardskillsdir = document.querySelector('.skills-right')
 
 menu.addEventListener('click', MenuMobile)
 function MenuMobile(){
-    PaginLado.style.display = 'flex'
+    PaginLado.style.marginLeft = '0'
     principal.style.display = 'none'
 }
 
 close.addEventListener('click', fechado)
 function fechado(){
-    PaginLado.style.display = 'none'
-    cabeçalho.style.display = 'flex'
+    PaginLado.style.marginLeft = '-50%'
     principal.style.display = 'block'
+    cabeçalho.style.display = 'flex'
 }
 
 

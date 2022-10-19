@@ -24,8 +24,10 @@
     
     /* Aside menu */
     aside {
-        display: none;
-        width: 51%;
+        width: 50%;
+        height: 100%;
+        margin-left: -50%;
+        transition: 2s;
     }
 
     .icon-contato {
@@ -77,7 +79,7 @@
         display: flex;
         width: 100%;
         justify-content: end;
-        margin-right: 4rem;
+        padding-right: 2rem;
         font-size: 7vw;
     }
 

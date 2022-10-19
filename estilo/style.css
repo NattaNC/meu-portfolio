@@ -20,6 +20,7 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: var(--font-secundaria);
+    scroll-behavior: smooth;
 }
 
 body {
@@ -27,6 +28,10 @@ body {
     width: 100%;
     height: 100vh;
     background-color: white;
+}
+
+#sobre, #conhecimentos, #soft-skills, #habilidades, #projetos {
+    margin-top: 10rem;
 }
 /* Animação Scroll */
 #h1-nome {
@@ -64,8 +69,8 @@ aside {
     padding-top: 3rem;
     overflow-y: scroll;
     position: fixed;
-    /*transition: 1s;*/
 }
+
 
 #fechar {
     display: none;
@@ -602,7 +607,7 @@ main #paisagem > h1 {
     color: black;
 }
 
-.educacao {
+#educacao {
     margin-top: 5rem;
 }
 
@@ -670,6 +675,3 @@ main #paisagem > h1 {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-
-
