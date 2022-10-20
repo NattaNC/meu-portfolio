@@ -92,9 +92,9 @@ function MenuMobile(){
 
 close.addEventListener('click', fechado)
 function fechado(){
-    PaginLado.style.marginLeft = '-50%'
-    principal.style.display = 'block'
+    PaginLado.style.marginLeft = '-100%'
     cabeçalho.style.display = 'flex'
+    principal.style.display = 'block'
 }
 
 

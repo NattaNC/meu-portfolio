@@ -24,9 +24,9 @@
     
     /* Aside menu */
     aside {
-        width: 50%;
+        width: 100%;
         height: 100%;
-        margin-left: -50%;
+        margin-left: -100%;
         transition: 2s;
     }
 
@@ -35,8 +35,9 @@
     }
 
     .img-perfil {
+        width: 100px;
+        height: 100px;
         border: 0.1rem solid white;
-        margin-right: 1rem;
     }
 
     #img-perfil-mobile {
@@ -63,12 +64,17 @@
     }
 
     .meu-nome {
-        margin-right: 2rem;
-        
+        margin-right: 0rem;
+        text-align: center;
+    }
+
+    aside > section > .contato {
+        text-align: center;
+        margin-top: 10rem;
     }
 
     aside > section > .contato ul > li {
-        font-size: 2.2vw;
+        font-size: 3vw;
     }
 
     section {
