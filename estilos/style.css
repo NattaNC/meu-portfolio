@@ -651,27 +651,28 @@ main #paisagem > h1 {
     border-radius: 1rem;
 }
 
-#ecommerce {
-    background-image: url(../imagens/img-ecommerce.jpg);
+#ecommerce, #blogr, #snippet, #huddle, #pokedex {
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+#ecommerce {
+    background-image: url(../imagens/img-ecommerce.jpg);
 }
 
 
 #blogr {
     background-image: url(../imagens/img-blogr.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 #snippet {
     background-image: url(../imagens/img-snippet.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 #huddle {
     background-image: url(../imagens/img-huddle.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+}
+
+#pokedex {
+    background-image: url(../imagens/img-pokedex.png);
 }
