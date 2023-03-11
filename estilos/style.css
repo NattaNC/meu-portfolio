@@ -170,6 +170,14 @@ aside > section > .contato a {
     color: var(--cor-01);
 }
 
+.links-aside{
+    transition: 1s;
+}
+
+.links-aside:hover {
+    color: #00A5CF;
+    padding: 0 0 0 1rem;
+}
 
 /* Principal */
 main {
@@ -630,6 +638,13 @@ main #paisagem > h1 {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 1s;
+}
+
+.card-projetos:hover {
+    width: 80%;
+    height: 300px;
+    transition: 1s;
 }
 
 .projeto a {
@@ -651,7 +666,7 @@ main #paisagem > h1 {
     border-radius: 1rem;
 }
 
-#ecommerce, #blogr, #snippet, #huddle, #pokedex {
+#ecommerce, #blogr, #snippet, #huddle, #pokedex, #shortly {
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -675,4 +690,8 @@ main #paisagem > h1 {
 
 #pokedex {
     background-image: url(../imagens/img-pokedex.png);
+}
+
+#shortly {
+    background-image: url(../imagens/shortly.png);
 }
