@@ -171,7 +171,7 @@ aside > section > .contato a {
 }
 
 .links-aside{
-    transition: 1s;
+    transition: .5s;
 }
 
 .links-aside:hover {

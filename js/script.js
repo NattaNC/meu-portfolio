@@ -92,7 +92,3 @@ function fechado(){
     cabeçalho.style.display = 'flex'
     principal.style.display = 'block'
 }
-
-
-
-
